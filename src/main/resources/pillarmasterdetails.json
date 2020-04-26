@@ -1,0 +1,11 @@
+[{"type" : "PILLAR",
+"id":6544293208522752,
+"value" : "CHENNAI",
+"plant":"CHENNAI",
+"active" : true
+},{"type" : "PILLAR",
+"id":5418393301680128,
+"value" : "BENGALURU",
+"plant":"CHENNAI",
+"active" : true
+}]

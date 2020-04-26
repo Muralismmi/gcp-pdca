@@ -1,0 +1,27 @@
+[{"workPermitType":"FORM-C",
+"workPermitIdPrefix" : "FC",
+"activeStatus":true,
+"createdMode":"APPLICATION",
+"uploadStatus":"Processing",
+"sheetId" : ""
+},
+{"workPermitType":"FORM-D",
+"workPermitIdPrefix" : "FD",
+"activeStatus":true,
+"createdMode":"APPLICATION",
+"uploadStatus":"Processing",
+"sheetId" : ""
+},{"workPermitType":"Form-1",
+"workPermitIdPrefix" : "F1",
+"activeStatus":true,
+"createdMode":"APPLICATION",
+"uploadStatus":"Processing",
+"sheetId" : ""
+},
+{"workPermitType":"Form-2",
+"workPermitIdPrefix" : "F2",
+"activeStatus":true,
+"createdMode":"APPLICATION",
+"uploadStatus":"Processing",
+"sheetId" : ""
+}]

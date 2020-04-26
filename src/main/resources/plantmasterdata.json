@@ -1,0 +1,13 @@
+[{"code" : "PLANT0001",
+"id":5101733952880640,
+"name" : "CHENNAI",
+"location" : "SOUTH",
+"region" : "INDIA",
+"active" : true
+},{"code" : "PLANT002",
+"id":5664683906301952,
+"name" : "BANGLORE",
+"location" : "SOUTH",
+"region" : "INDIA",
+"active" : true
+}]
