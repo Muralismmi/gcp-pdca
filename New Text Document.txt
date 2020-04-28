@@ -1,0 +1,6 @@
+pdca-test-1
+
+mvn package appengine:deploy -Dapp.deploy.projectId=pdca-test-1 -Dapp.deploy.version=v5
+
+  [https://pdca-test-1.el.r.appspot.com]
+https://pdca-test-1.el.r.appspot.com]

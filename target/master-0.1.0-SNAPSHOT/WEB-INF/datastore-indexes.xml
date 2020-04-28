@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+	<datastore-index kind="WorkPermitTypeField" ancestor="false" source="manual">
+        <property name="workpermitTypeRefId" direction="asc"/>
+        <property name="fieldSequence" direction="asc"/>
+    </datastore-index>
+    <datastore-index kind="WorkPermitType" ancestor="false" source="manual">
+        <property name="activeStatus" direction="asc"/>
+        <property name="uploadStatus" direction="asc"/>
+        <property name="workPermitType" direction="asc"/>
+    </datastore-index>
+</datastore-indexes>

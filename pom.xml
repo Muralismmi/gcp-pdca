@@ -265,8 +265,8 @@
       <plugin>
         <groupId>com.google.cloud.tools</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
-        <version>${appengine.maven.plugin.version}</version>
-      </plugin>
+		  <version>2.2.0</version>
+	  </plugin>
        <plugin>
 				<groupId>org.datanucleus</groupId>
 				<artifactId>maven-datanucleus-plugin</artifactId>

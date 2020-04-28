@@ -178,6 +178,30 @@ public class User implements Serializable{
 	public void setLastUpdatedOn(long lastUpdatedOn) {
 		this.lastUpdatedOn = lastUpdatedOn;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "User{" +
+				"id=" + id +
+				", userEmail='" + userEmail + '\'' +
+				", title='" + title + '\'' +
+				", firstName='" + firstName + '\'' +
+				", lastName='" + lastName + '\'' +
+				", userName='" + userName + '\'' +
+				", plantId=" + plantId +
+				", plantName='" + plantName + '\'' +
+				", pillarLead=" + pillarLead +
+				", pillarId=" + pillarId +
+				", pillarName='" + pillarName + '\'' +
+				", projectLead=" + projectLead +
+				", mentor=" + mentor +
+				", editor=" + editor +
+				", active=" + active +
+				", roles=" + roles +
+				", createdBy='" + createdBy + '\'' +
+				", lastUpdatedBy='" + lastUpdatedBy + '\'' +
+				", createdOn=" + createdOn +
+				", lastUpdatedOn=" + lastUpdatedOn +
+				'}';
+	}
 }
