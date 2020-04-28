@@ -2004,7 +2004,7 @@ populatejs.min
             success: function (data) {
                 console.log(data);
                 $("#pleasewait").hide();
-                showNotification("Success!", response.MESSAGE,
+                showNotification("Success!", "Deleted Succesfully",
                     "success");
                 setTimeout(function(){
                     window.location.reload();
