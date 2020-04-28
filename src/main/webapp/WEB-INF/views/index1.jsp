@@ -2005,11 +2005,17 @@ populatejs.min
                 console.log(data);
                 $("#pleasewait").hide();
                 alert("User deleted. Id " + userId);
-                location.reload();
+                showNotification("Success!", response.MESSAGE,
+                    "success");
+                setTimeout(function(){
+                    window.location.reload();
+                }, 1000);
             },
             error: function (data) {
                 $("#pleasewait").hide();
-                console.log("failded to delete user", data);
+                showNotification("ERROR!", "Please Try Again Later",
+                    "failure");
+                return;
 
             }
         })
