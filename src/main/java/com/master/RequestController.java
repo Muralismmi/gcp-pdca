@@ -554,7 +554,10 @@ public class RequestController {
             canApprove = true;
         } else if (isUserRequestHaveSamePlant && isUSerRequestHaveSamePillar && userJdoObj.getRoles().contains("APPROVER3") && objRequest.getStatus().contains("APPROVAL3")) {
             canApprove = true;
-        } else {
+        }else if(isUSerRequestHaveSamePillar && isUserRequestHaveSamePlant && userJdoObj.getRoles().contains("PLANTMANAGER") ){
+            canApprove = true;
+        }
+        else {
             canApprove = false;
         }
 

@@ -1120,6 +1120,7 @@ $(document).on(
 
 			var inputData = {};
 
+
 			if (id != undefined && id != '') {
 				isSave = false;
 				inputData.id = id;
@@ -1301,6 +1302,7 @@ $(document).on(
 							return;
 						}
 						debugger;
+						cleanModal();
 						var response = JSON.parse(data);
 						if (response.STATUS == "FAILURE") {
 							console.log("response from here " + response);

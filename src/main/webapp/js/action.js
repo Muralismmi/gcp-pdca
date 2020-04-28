@@ -5,6 +5,8 @@
    var loader = $('.loader-wrapper');
 
    var USER_INFO=[];
+
+   var SELECTED_USER_FOR_EDIT = null;
    
    var requestPillarLead;
    
