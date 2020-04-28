@@ -2004,7 +2004,6 @@ populatejs.min
             success: function (data) {
                 console.log(data);
                 $("#pleasewait").hide();
-                alert("User deleted. Id " + userId);
                 showNotification("Success!", response.MESSAGE,
                     "success");
                 setTimeout(function(){
