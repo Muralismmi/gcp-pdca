@@ -2,6 +2,7 @@ package com.master;
 
 import com.DAO.*;
 import com.DAOImpl.*;
+import com.entity.Request;
 import com.entity.User;
 import com.helper.SearchDocumentHelper;
 import com.helper.UserUtil;
@@ -287,6 +288,15 @@ public class UserController {
                     responseMap.put("recordsTotal", count);
                     responseMap.put("recordsFiltered", count);
                 }
+
+                if(searchIndex.equals("REQUEST")){
+                    List<Request> requests = objRequestDAO.fetchRequestList();
+                    log.warning("Requests ARE " + requests.toString());
+                    responseMap.put("data", requests);
+                    responseMap.put("recordsFiltered", requests.size());
+                    responseMap.put("recordsTotal", requests.size());
+                } 
+
                 if (searchIndex.equals("USER")) {
 
                     List<User> users = userDao.fetchUserList();
