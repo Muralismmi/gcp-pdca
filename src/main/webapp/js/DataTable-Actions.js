@@ -178,7 +178,7 @@
                             "render": function (data, type, full,
                                                 meta) {
                                 if (data && data != null)
-                                    return data.replace(/[[\]]/g, '');
+                                    return data.toString();
                             }
                         },
                         {
@@ -233,7 +233,7 @@
                             "render": function (data, type, full,
                                                 meta) {
                                 if (data && data != null)
-                                    return data.replace(/[[\]]/g, '');
+                                    return data.toString();
                             }
                         },
                         {
@@ -260,7 +260,7 @@
                             "render": function (data, type, full,
                                                 meta) {
                                 if (data && data != null)
-                                    return data.replace(/[[\]]/g, '');
+                                    return data.toString();
                             }
                         },
                         {
