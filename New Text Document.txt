@@ -5,3 +5,5 @@ mvn package appengine:deploy -Dapp.deploy.projectId=pdca-test-1 -Dapp.deploy.ver
 
   [https://pdca-test-1.el.r.appspot.com]
 https://pdca-test-1.el.r.appspot.com]
+
+https://docs.google.com/spreadsheets/d/1AKT1Sr_6bs3eCY-cbOeoZ3oSmXt6E_yQf8J4kPvMSEY/edit#gid=173355904

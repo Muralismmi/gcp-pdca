@@ -295,7 +295,7 @@ public class UserController {
                     responseMap.put("data", requests);
                     responseMap.put("recordsFiltered", requests.size());
                     responseMap.put("recordsTotal", requests.size());
-                } 
+                }
 
                 if (searchIndex.equals("USER")) {
 

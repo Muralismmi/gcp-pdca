@@ -3,6 +3,7 @@
 <%@ page
         import="com.entity.User"
         import="org.codehaus.jackson.map.ObjectMapper"
+        import="com.helper.AccessHelper"
 %>
 <%
     User objUser = (User) request.getAttribute("user");
@@ -13,6 +14,11 @@
     String logegedInUserEmailId = (String) request.getAttribute("loggedinusersmailid");
     String userName = objUser.getFirstName() + " " + objUser.getLastName();
     System.out.println("the is logegedInUserEmailId is this :: " + logegedInUserEmailId);
+
+
+
+
+
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -168,12 +174,22 @@
              <span>My Action</span>
            </a>
          </li> -->
+
+        <%
+            if(AccessHelper.isAdminOrPlantManager(objUser)){
+
+        %>
+
         <li class="nav-item ">
             <a href="#userrole" id="userRole-Item" class="nav-link  myAction">
                 <i class="fas fa-fw fa-users" aria-hidden="true"></i>
                 <span>User Management</span>
             </a>
         </li>
+
+
+
+
         <li class="nav-item ">
             <a href="#plant" id="plant-Item" class="nav-link  myAction">
                 <i class="fas fa-fw fa-building" aria-hidden="true"></i>
@@ -216,6 +232,11 @@
                 <span>Losstype Master</span>
             </a>
         </li>
+
+        <%
+            }
+
+        %>
         <!--  <a class="dropdown-item" id="userRole-Item" style="display:none" href="#userrole">User Role</a>
                         <a class="dropdown-item" id="plant-Item" style="display:none" href="#plant">Plant</a>
                          <a class="dropdown-item" id="masterConfiguration-Item" style="display:none" href="#masterConfiguration">Master Configuration</a> -->
