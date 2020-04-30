@@ -170,10 +170,10 @@ public class UserController {
     @RequestMapping(value = "/listadmindetails/{indexname}/{sortfield}/{filterfield}/{filtervalue}", method = RequestMethod.GET)
     public @ResponseBody
     String listadmindetails(@PathVariable("indexname") String searchIndex, @PathVariable("sortfield") String sortfield, @PathVariable("filterfield") String filterfield, @PathVariable("filtervalue") String filtervalue, HttpServletRequest req,
-                            @RequestParam(value = "start", required = false) int start,
-                            @RequestParam(value = "length",required = false) int length,
+                            @RequestParam(value = "start", required = false) Integer start,
+                            @RequestParam(value = "length",required = false) Integer length,
                             @RequestParam(value = "search[value]",required = false) String searchStr,
-                            @RequestParam(value = "order[0][column]",required = false) int orderColumn,
+                            @RequestParam(value = "order[0][column]",required = false) Integer orderColumn,
                             @RequestParam(value = "order[0][dir]",required = false) String orderOptions) throws JsonParseException, JsonMappingException, IOException {
         String masterType = "";
         if (req.getParameter("configuration") == null || req.getParameter("configuration").equals(""))
