@@ -30,6 +30,8 @@ import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.activation.MimetypesFileTypeMap;
@@ -161,6 +163,20 @@ public class RequestController {
         String red_Id = objRequest.getPlant() + "_" + objRequest.getPrimaryPillar() + "_" + formType + "_" + nextnumString;
         return red_Id.trim();
 
+    }
+
+    @RequestMapping(value="/getAllRequest")
+    public ResponseEntity<?> getAllRequest(){
+
+        HashMap<String, Object> responseMap = new HashMap<String, Object>();
+        RequestDAO objRequestDAO = new RequestDAOImpl();
+
+        List<Request> requests = objRequestDAO.fetchRequestList();
+        log.warning("Requests ARE " + requests.toString());
+        responseMap.put("data", requests);
+        responseMap.put("recordsFiltered", requests.size());
+        responseMap.put("recordsTotal", requests.size());
+        return new ResponseEntity<>(responseMap, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/setid")

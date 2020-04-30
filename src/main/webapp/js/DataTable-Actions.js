@@ -123,8 +123,7 @@
                     },
                     "bDestroy": true,
                     "aaSorting": [[1, "asc"]],
-                    "ajax": "/listadmindetails/REQUEST/id,formId,formType,line,station,projectLeadName,teamMembers,mentorName,primaryPillar,lossType,problemStatement,startDate,targetDate,benefitType,benefitValue,cost,tools,actualCompletionDate,status,createdBy,createdOn,createdOn/plant/"
-                        + userDetails.plantName,
+                    "ajax": "/getAllRequest",
                     dom: 'Bfrtip',
                     "columns": [
                         {
