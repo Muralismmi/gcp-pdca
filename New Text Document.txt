@@ -1,9 +1,38 @@
 pdca-test-1
 
-last = v13
-mvn package appengine:deploy -Dapp.deploy.projectId=pdca-test-1 -Dapp.deploy.version=v14
+last = v14
+mvn package appengine:deploy -Dapp.deploy.projectId=pdca-test-1 -Dapp.deploy.version=v15
 
   [https://pdca-test-1.el.r.appspot.com]
 https://pdca-test-1.el.r.appspot.com]
 
 https://docs.google.com/spreadsheets/d/1AKT1Sr_6bs3eCY-cbOeoZ3oSmXt6E_yQf8J4kPvMSEY/edit#gid=173355904
+
+
+<div style="width: 200px;height: 38px;">
+    <select id="exampleFormControlSelect1" style="height: 36px;/*! padding: 18px; *//*! padding-bottom: 25px; *//*! margin-bottom: 1px; */width: 100%;border: none;box-shadow: 0 0 5px -1px gray;" class="">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+style="height: 36px;width: 100%;border: none;box-shadow: 0 0 5px -1px gray;" class=""
+
+$("#viewPDCAtable_filter").find("label").css("display","inline-block")
+$("#viewPDCAtable_filter").append('<div style="width: 200px;margin-left: 20px;height: 38px;display: inline-block;"><select id="exampleFormControlSelect1"  onchange = "changeRequestList()" style="width: 100%;border: none;box-shadow: 0 0 5px -1px gray;"><option value="0">Select Status</option><option value="1">All</option><option value="2">Draft</option><option value="3">Action Pending</option></select></div>');
+function changeRequestList(){
+  var val = $("#exampleFormControlSelect1").val();
+  if(val == "0"){
+   
+   }
+   else if(val=="1"){
+      $('#viewPDCAtable').DataTable().column( 19 ).search("",true,false).draw()
+    }else if(val == "2"){
+     $('#viewPDCAtable').DataTable().column( 19 ).search("DRAFT",true,false).draw() 
+   
+    } 
+
+
+}
