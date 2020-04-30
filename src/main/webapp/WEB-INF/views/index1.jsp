@@ -2162,6 +2162,22 @@ populatejs.min
         setPillar(null, null);
     }
 
+    function changeRequestList(){
+        var val = $("#exampleFormControlSelect1").val();
+        if(val == "0"){
+
+        }
+        else if(val=="1"){
+            $('#viewPDCAtable').DataTable().column( 19 ).search("",true,false).draw()
+        }else if(val == "2"){
+            $('#viewPDCAtable').DataTable().column( 19 ).search("DRAFT",true,false).draw()
+
+        }else if(val == "3"){
+            $('#viewPDCAtable').DataTable().column( 19 ).search("^((?!(DRAFT|APPROVED|REJECTED)).)*$",true,false).draw()
+        }
+
+    }
+
 </script>
 
 

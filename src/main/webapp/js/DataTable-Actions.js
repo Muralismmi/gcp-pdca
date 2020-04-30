@@ -119,6 +119,9 @@
                     "paging": true,
                     "info": true,
                     "initComplete": function(settings, json) {
+
+                        $("#viewPDCAtable_filter").find("label").css("display","inline-block")
+                        $("#viewPDCAtable_filter").append('<div style="width: 200px;margin-left: 20px;height: 38px;display: inline-block;"><select id="exampleFormControlSelect1"  onchange = "changeRequestList()" style="width: 100%;border: none;box-shadow: 0 0 5px -1px gray;"><option value="0">Select Status</option><option value="1">All</option><option value="2">Draft</option><option value="3">Action Pending</option></select></div>');
                         function changeRequestList(){
                             var val = $("#exampleFormControlSelect1").val();
                             if(val == "0"){
@@ -134,9 +137,6 @@
                             }
 
                         }
-                        $("#viewPDCAtable_filter").find("label").css("display","inline-block")
-                        $("#viewPDCAtable_filter").append('<div style="width: 200px;margin-left: 20px;height: 38px;display: inline-block;"><select id="exampleFormControlSelect1"  onchange = "changeRequestList()" style="width: 100%;border: none;box-shadow: 0 0 5px -1px gray;"><option value="0">Select Status</option><option value="1">All</option><option value="2">Draft</option><option value="3">Action Pending</option></select></div>');
-
                     },
                     "language": {
                         "infoFiltered": "",
