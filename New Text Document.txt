@@ -1,7 +1,7 @@
 pdca-test-1
 
 last = v6
-mvn package appengine:deploy -Dapp.deploy.projectId=pdca-test-1 -Dapp.deploy.version=v7
+mvn package appengine:deploy -Dapp.deploy.projectId=pdca-test-1 -Dapp.deploy.version=v12
 
   [https://pdca-test-1.el.r.appspot.com]
 https://pdca-test-1.el.r.appspot.com]
