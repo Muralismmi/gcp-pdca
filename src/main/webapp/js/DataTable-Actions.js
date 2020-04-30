@@ -122,7 +122,6 @@
                         "infoFiltered": "",
                     },
                     "bDestroy": true,
-                    "serverSide": true,
                     "aaSorting": [[1, "asc"]],
                     "ajax": "/listadmindetails/REQUEST/id,formId,formType,line,station,projectLeadName,teamMembers,mentorName,primaryPillar,lossType,problemStatement,startDate,targetDate,benefitType,benefitValue,cost,tools,actualCompletionDate,status,createdBy,createdOn,createdOn/plant/"
                         + userDetails.plantName,
@@ -152,7 +151,7 @@
                             "render": function (data, type, full,
                                                 meta) {
                                 team = data;
-                                debugger;
+
                                 var jsonval = eval(data);
                                 var nameArray = new Array();
                                 console.log("data" + jsonval);
@@ -368,7 +367,7 @@
                 });
         $('div.dt-buttons').children().removeClass('dt-button');
         $('.dt-buttons .btn').removeClass('btn-secondary');
-        changeName($("#viewPDCAtable").find("td"), true, "");
+
     }
     /*	<th>Title</th>
         <th>Name</th>
